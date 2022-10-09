@@ -137,9 +137,10 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        String[] split = to_split.split(" ", 8);
+        String[] split = to_split.split(" ");
+
         for (String a : split)
-            System.out.print(a.charAt(0));
+            ret.append(a.charAt(0));
 
         return ret.toString();
     }
